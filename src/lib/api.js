@@ -10,8 +10,6 @@ api.products = {
 
     const responseBody = await response.json();
 
-    console.log(responseBody);
-
     if (response.status !== 200) {
       throw new Error(responseBody);
     }
